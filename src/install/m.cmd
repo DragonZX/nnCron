@@ -1,3 +1,3 @@
 @ECHO OFF
 call ..\ver.cmd
-"%WIN%\NSIS\makensis.exe" nncron.nsi
+"%ProgramFiles%\NSIS\makensis.exe" nncron.nsi

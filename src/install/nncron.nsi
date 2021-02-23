@@ -1,5 +1,4 @@
 ; creates nncronxxx.exe
-;
 ;--------------------------------
 
 !define VER_MAJOR 1
@@ -21,7 +20,7 @@ OutFile "${PROG_SHORT_NAME}${VERSION}.exe"
 
 ; license
 LangString ReadLicenseText ${LANG_ENGLISH} "Please, review the license terms before installing ${PROG_NAME}."
-LangString ReadLicenseText ${LANG_RUSSIAN} "Пожалуйста, внимательно прочтите лицензию перед тем как продолжить установку ${PROG_NAME}."
+LangString ReadLicenseText ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}."
 LicenseText $(ReadLicenseText)
 LicenseLangString LicenseSource ${LANG_ENGLISH} "${COMPILE_DIR}\..\presetup\license.txt"
 LicenseLangString LicenseSource ${LANG_RUSSIAN} "${COMPILE_DIR}\..\presetup\license.rus"
@@ -36,12 +35,12 @@ InstallDirRegKey HKLM "SOFTWARE\nnSoft\${PROG_NAME}" "path"
 
 ; The text to prompt the user to choose components
 LangString ChooseComponentsText ${LANG_ENGLISH} "Check the components you want to install and uncheck the components you don't want to install. Click Next to continue."
-LangString ChooseComponentsText ${LANG_RUSSIAN} "Выберите компоненты, которые хотите установить.$\r$\nНажмите Далее для продолжения."
+LangString ChooseComponentsText ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 ComponentText $(ChooseComponentsText)
 
 ; The text to prompt the user to enter a directory
 LangString EnterDirectoryText ${LANG_ENGLISH} "Choose the folder in which to install ${PROG_NAME}.$\r$\nTo install in a different folder, click Browse and select another folder.$\r$\nClick Install to start the installation."
-LangString EnterDirectoryText ${LANG_RUSSIAN} "Выберите папку, в которую будет установлен ${PROG_NAME}.$\r$\nВоспользуйтесь кнопкой Обзор, чтобы указать другую папку.$\r$\nНажмите Установить, чтобы начать процесс инсталляции."
+LangString EnterDirectoryText ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 DirText $(EnterDirectoryText)
 
 ; show the "show details" box
@@ -58,52 +57,52 @@ SetCompressor /SOLID lzma
 ;
 
 LangString AbortMessage ${LANG_ENGLISH} "Are you sure you want to quit ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR} Setup?"
-LangString AbortMessage ${LANG_RUSSIAN} "Вы уверены, что хотите прервать процесс установки ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR}?"
+LangString AbortMessage ${LANG_RUSSIAN} "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR}?"
 LangString AnotherInstanceMessage1 ${LANG_ENGLISH} "Another instance of ${PROG_NAME} is running on your computer.$\r$\nPlease, close ${PROG_NAME} and start setup program again."
-LangString AnotherInstanceMessage1 ${LANG_RUSSIAN} "Установка ${PROG_NAME} невозможна при работающем приложении.$\r$\nПожалуйста, закройте ${PROG_NAME} и перезапустите процесс инсталляции."
+LangString AnotherInstanceMessage1 ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 LangString AnotherInstanceMessage2 ${LANG_ENGLISH} "Another instance of ${PROG_NAME} is running on your computer.$\r$\nPress Yes to close ${PROG_NAME} automatically and continue with Setup.$\r$\nPress No to quit Setup."
-LangString AnotherInstanceMessage2 ${LANG_RUSSIAN} "Установка ${PROG_NAME} невозможна при работающем приложении.$\r$\nНажмите Yes, чтобы автоматически закрыть ${PROG_NAME} и продолжить установку.$\r$\nНажмите No, чтобы выйти из программы установки."
+LangString AnotherInstanceMessage2 ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Yes, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.$\r$\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ No, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 LangString AdministratorMessage ${LANG_ENGLISH} "For installation of ${PROG_NAME} it is necessary to have administrator rights on this computer."
-LangString AdministratorMessage ${LANG_RUSSIAN} "Для установки ${PROG_NAME} необходимо иметь права администратора на этом компьютере."
+LangString AdministratorMessage ${LANG_RUSSIAN} "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 LangString Sec1Name ${LANG_ENGLISH} "Program Files (required)"
-LangString Sec1Name ${LANG_RUSSIAN} "Основные файлы ${PROG_NAME}"
+LangString Sec1Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}"
 LangString Sec2Name ${LANG_ENGLISH} "Plugins"
-LangString Sec2Name ${LANG_RUSSIAN} "Плагины"
+LangString Sec2Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 LangString Sec3Name ${LANG_ENGLISH} "Documentation"
-LangString Sec3Name ${LANG_RUSSIAN} "Документация"
+LangString Sec3Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 ;LangString Sec4Name ${LANG_ENGLISH} "Start Menu Shortcuts"
-;LangString Sec4Name ${LANG_RUSSIAN} "Ярлыки в меню Пуск"
+;LangString Sec4Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ"
 LangString ServiceStartMessage ${LANG_ENGLISH} "Installing and starting ${PROG_NAME} service"
-LangString ServiceStartMessage ${LANG_RUSSIAN} "Установка и запуск сервиса ${PROG_NAME}"
+LangString ServiceStartMessage ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}"
 
 LangString ForAll ${LANG_ENGLISH} "for all users"
-LangString ForAll ${LANG_RUSSIAN} "для всех пользователей"
+LangString ForAll ${LANG_RUSSIAN} "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 LangString ForUser ${LANG_ENGLISH} "for current user only"
-LangString ForUser ${LANG_RUSSIAN} "для текущего пользователя"
+LangString ForUser ${LANG_RUSSIAN} "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 LangString un.ServiceStopMessage ${LANG_ENGLISH} "Stopping and uninstalling ${PROG_NAME} service..."
-LangString un.ServiceStopMessage ${LANG_RUSSIAN} "Остановка и удаление сервиса ${PROG_NAME}..."
+LangString un.ServiceStopMessage ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}..."
 LangString un.ServiceDoneMessage ${LANG_ENGLISH} "...completed"
-LangString un.ServiceDoneMessage ${LANG_RUSSIAN} "...завершено"
+LangString un.ServiceDoneMessage ${LANG_RUSSIAN} "...пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 LangString Sec4Name ${LANG_ENGLISH} "Start Menu Shortcuts"
-LangString Sec4Name ${LANG_RUSSIAN} "Ярлыки в меню Пуск"
+LangString Sec4Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ"
 LangString Sec41Name ${LANG_ENGLISH} "For current user only"
-LangString Sec41Name ${LANG_RUSSIAN} "Только для текущего пользователя"
+LangString Sec41Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 LangString Sec42Name ${LANG_ENGLISH} "For all users"
-LangString Sec42Name ${LANG_RUSSIAN} "Для всех пользователей"
+LangString Sec42Name ${LANG_RUSSIAN} "пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 LangString Sec43Name ${LANG_ENGLISH} "Do not create shortcuts"
-LangString Sec43Name ${LANG_RUSSIAN} "Не создавать ярлыки"
+LangString Sec43Name ${LANG_RUSSIAN} "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 
 LangString Sec5Name ${LANG_ENGLISH} "Autostart ${PROG_NAME}"
-LangString Sec5Name ${LANG_RUSSIAN} "Автозапуск ${PROG_NAME}"
+LangString Sec5Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME}"
 LangString Sec51Name ${LANG_ENGLISH} "System service"
-LangString Sec51Name ${LANG_RUSSIAN} "Системная служба"
+LangString Sec51Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ"
 LangString Sec52Name ${LANG_ENGLISH} "Application for all users"
-LangString Sec52Name ${LANG_RUSSIAN} "Приложение для всех пользователей"
+LangString Sec52Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 LangString Sec53Name ${LANG_ENGLISH} "Application for current user"
-LangString Sec53Name ${LANG_RUSSIAN} "Приложение для текущего пользователя"
+LangString Sec53Name ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 ;--------------------------------
 ;
 ; The stuff to install
@@ -213,7 +212,7 @@ SectionEnd
 ; Uninstaller
 
 LangString BeforeUninstallText ${LANG_ENGLISH} "This will uninstall ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR} from your computer. Click Uninstall to start the uninstallation."
-LangString BeforeUninstallText ${LANG_RUSSIAN} "Сейчас программа ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR} будет удалена с вашего компьютера. Нажмите Удалить для начала процесса деинсталляции."
+LangString BeforeUninstallText ${LANG_RUSSIAN} "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ${PROG_NAME} ${VER_MAJOR}.${VER_MINOR} пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ."
 UninstallText $(BeforeUninstallText)
 
 ; Uninstall section
