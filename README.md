@@ -12,11 +12,11 @@
 
 ---
 
-# nnCron [en]
+## nnCron [en]
 
 nnCron is an advanced and very powerful scheduler, scripting tool and automation manager. nnCron is very small in size (900k), but its capabilities are truly colossal.
 
-## Features
+### Features
 
 Besides possessing the traditional scheduler features (starting programs, displaying reminder messages and opening documents at specified time), nnCron also can:
 
@@ -42,29 +42,29 @@ nnCron understands cron table format (Unix) and is managed with easy-to-edit pla
 
 nnCron has its own powerful (Forth-compatible) scripting language, allows to use VBScript/JScript, as well as regular expressions, and can be further extended with plugins. It can be started as a service or as a regular standalone application. You can examine nnCron features in depth by reading it's online documentation.
 
-## OS support
+### OS support
 
 * Windows desktop: 2000, XP, Vista, 7, 8, 8.1, 10
-* Windows server: 2003, Home, 2008, 2012, 2012 R2
+* Windows server: 2003-2019
 
 ---
 
-# nnCron [ru]
+## nnCron [ru]
 
 nnCron - это компактный (900k), но мощный планировщик и менеджер автоматизации с собственным скриптовым языком, основанным на синтаксисе языка программирования Форт.
 
-## Осбенности
+### Особенности
 
 Помимо традиционной для планировщика способности запускать в указанное время программы, "напоминалки" и открывать документы, nnCron умеет:
 
-* запускать произвольные программы как сервисы
-* запускать задачи "от имени" указанных юзеров
-* отслеживать и перезапускать просроченные задачи и напоминалки
+* запускать произвольные программы как службы
+* запускать задачи "от имени" указанных пользователей
+* отслеживать и перезапускать просроченные задачи и напоминания
 * выключать или "усыплять" компьютер в заданное время, "будить" компьютер, чтобы запустить задачу
 * отображать/скрывать/закрывать/убивать/сворачивать/разворачивать и прятать в системный трей заданные окна, добавлять в трей произвольные иконки
 * менять размер и местоположение окон, а также изменять их "прозрачность"
 * выводить на экран и в лог-файл любые сообщения, в том числе и запросы на выполнение указанных действий
-* работать с клипбордом, файлами и реестром
+* работать с буфером обмена, файлами и реестром
 * эмулировать клавиатурный ввод и операции с мышкой
 * звонить и класть трубку
 * воспроизводить аудио-файлы и "пищать" через системный динамик
@@ -79,8 +79,7 @@ nnCron позволяет использовать в задачах VBScript/JS
 
 nnCron бесплатен для граждан стран бывшего СССР при условии частного и некоммерческого использования. Для коммерческого или корпоративного использования программы нужно получить платную лицензию. Инструкции по платной и бесплатной регистрации nnCron даны в соответствующем разделе.
 
-## Поддерживаемые ОС
+### Поддерживаемые ОС
 
 * Windows desktop: 2000, XP, Vista, 7, 8, 8.1, 10
-* Windows server: 2003, Home, 2008, 2012, 2012 R2
-
+* Windows server: 2003-2019
